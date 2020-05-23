@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -l nodes=13:ppn=24
+#PBS -l pmem=7GB
+#PBS -l walltime=0:59:00
+#PBS -q hive-interact
+#PBS -N Al_scaling
+#PBS -o stdout
+#PBS -e stderr
+cd $PBS_O_WORKDIR
+
+#module load anaconda3/4.2.0;source activate atm
+ulimit -s unlimited
+
+export MV2_ENABLE_AFFINITY=1
+export MV2_CPU_BINDING_POLICY=bunch
+#export MALLOC_MMAP_MAX_=0 
+#export M_TRIM_THRESHOLD_=-1
+
+n=$PBS_NP
+for r in 1 2
+do
+    mpirun -np $n ../../../../lib/sparc -name al1372 > al1372-${r}.log
+    mv al1372.out al1372-${r}.out
+done
+
+#mpirun -np $PBS_NP ../../../lib/sparc -name sprc-calc > sprc-calc.log

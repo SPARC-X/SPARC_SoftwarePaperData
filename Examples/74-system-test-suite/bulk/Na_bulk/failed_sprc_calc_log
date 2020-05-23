@@ -1,0 +1,316 @@
+
+Creating SPARC_INPUT_MPI datatype took 0.104 ms
+Initializing ...
+Checking input arguments parsed by command line.
+
+Checking inputs parsed by commandline took 0.177 ms
+
+Set default values took 0.011 ms
+Reading input file sprc-calc.inpt
+
+Reading input file took 16.407 ms
+Broadcasting the input parameters took 17.397 ms
+Reading ion file sprc-calc.ion
+Number of atom types : 1.
+Total number of atoms: 120.
+[32m
+Time for finding element is 0.002 ms
+[32mElement type for atom_type Na is Na
+[0m[32mDefault atomic mass for Na is 22.989769
+[0mpseudo_dir # 1 = Na.pot
+
+Reading ion file took 15.189 ms
+Reading pseudopotential (PSP) file.
+Reading pseudopotential: Na.pot
+Input element type: Na
+pspcod = 8, pspxc = 2
+
+Reading pseudopotential file took 33.848 ms
+
+Freeing SPARC_INPUT_MPI datatype took 0.017 ms
+Bcast pre-info. took 32.879 ms
+Broadcasting Atom info. using MPI_Pack & MPI_Unpack in SPARC took 63.420 ms
+
+Checking existence of (0) out file(s) took 0.045 ms
+MPI_Bcast packed buff of length 43068 took 63.317 ms
+
+
+CELL_TYP: 0
+
+
+Range:
+   51.605345	   34.403563	   17.201782
+
+COORD AFTER MAPPING:
+   15.051559	   12.077044	    0.824292	
+   15.051559	   29.278826	    0.824292	
+   32.253340	   12.077044	    0.824292	
+   32.253340	   29.278826	    0.824292	
+   49.455122	   12.077044	    0.824292	
+   49.455122	   29.278826	    0.824292	
+    1.092215	    1.092215	    1.092215	
+    1.092215	   18.293997	    1.092215	
+   18.293997	    1.092215	    1.092215	
+   18.293997	   18.293997	    1.092215	
+   35.495778	    1.092215	    1.092215	
+   35.495778	   18.293997	    1.092215	
+    3.476153	    7.776599	    2.150223	
+    3.476153	   24.978380	    2.150223	
+   20.677935	    7.776599	    2.150223	
+   20.677935	   24.978380	    2.150223	
+   37.879716	    7.776599	    2.150223	
+   37.879716	   24.978380	    2.150223	
+   13.993568	    5.392678	    3.208213	
+   13.993568	   22.594459	    3.208213	
+   31.195350	    5.392678	    3.208213	
+   31.195350	   22.594459	    3.208213	
+   48.397132	    5.392678	    3.208213	
+   48.397132	   22.594459	    3.208213	
+    7.776599	    2.150223	    3.476153	
+    7.776599	   19.352004	    3.476153	
+   24.978380	    2.150223	    3.476153	
+   24.978380	   19.352004	    3.476153	
+   42.180162	    2.150223	    3.476153	
+   42.180162	   19.352004	    3.476153	
+    9.425183	   10.751113	    5.124720	
+    9.425183	   27.952895	    5.124720	
+   26.626965	   10.751113	    5.124720	
+   26.626965	   27.952895	    5.124720	
+   43.828746	   10.751113	    5.124720	
+   43.828746	   27.952895	    5.124720	
+    3.208213	   13.993568	    5.392678	
+    3.208213	   31.195350	    5.392678	
+   20.409995	   13.993568	    5.392678	
+   20.409995	   31.195350	    5.392678	
+   37.611776	   13.993568	    5.392678	
+   37.611776	   31.195350	    5.392678	
+   13.725611	   16.377507	    6.450668	
+   13.725611	   33.579288	    6.450668	
+   30.927393	   16.377507	    6.450668	
+   30.927393	   33.579288	    6.450668	
+   48.129174	   16.377507	    6.450668	
+   48.129174	   33.579288	    6.450668	
+   16.109566	    9.693106	    7.508676	
+   16.109566	   26.894887	    7.508676	
+   33.311348	    9.693106	    7.508676	
+   33.311348	   26.894887	    7.508676	
+   50.513130	    9.693106	    7.508676	
+   50.513130	   26.894887	    7.508676	
+    2.150223	    3.476153	    7.776599	
+    2.150223	   20.677935	    7.776599	
+   19.352004	    3.476153	    7.776599	
+   19.352004	   20.677935	    7.776599	
+   36.553786	    3.476153	    7.776599	
+   36.553786	   20.677935	    7.776599	
+   10.751113	    5.124720	    9.425183	
+   10.751113	   22.326502	    9.425183	
+   27.952895	    5.124720	    9.425183	
+   27.952895	   22.326502	    9.425183	
+   45.154677	    5.124720	    9.425183	
+   45.154677	   22.326502	    9.425183	
+    7.508676	   16.109566	    9.693106	
+    7.508676	   33.311348	    9.693106	
+   24.710457	   16.109566	    9.693106	
+   24.710457	   33.311348	    9.693106	
+   41.912239	   16.109566	    9.693106	
+   41.912239	   33.311348	    9.693106	
+    5.124720	    9.425183	   10.751113	
+    5.124720	   26.626965	   10.751113	
+   22.326502	    9.425183	   10.751113	
+   22.326502	   26.626965	   10.751113	
+   39.528283	    9.425183	   10.751113	
+   39.528283	   26.626965	   10.751113	
+   11.809104	   11.809104	   11.809104	
+   11.809104	   29.010885	   11.809104	
+   29.010885	   11.809104	   11.809104	
+   29.010885	   29.010885	   11.809104	
+   46.212667	   11.809104	   11.809104	
+   46.212667	   29.010885	   11.809104	
+    0.824292	   15.051559	   12.077044	
+    0.824292	   32.253340	   12.077044	
+   18.026074	   15.051559	   12.077044	
+   18.026074	   32.253340	   12.077044	
+   35.227855	   15.051559	   12.077044	
+   35.227855	   32.253340	   12.077044	
+   16.377507	    6.450668	   13.725611	
+   16.377507	   23.652450	   13.725611	
+   33.579288	    6.450668	   13.725611	
+   33.579288	   23.652450	   13.725611	
+   50.781070	    6.450668	   13.725611	
+   50.781070	   23.652450	   13.725611	
+    5.392678	    3.208213	   13.993568	
+    5.392678	   20.409995	   13.993568	
+   22.594459	    3.208213	   13.993568	
+   22.594459	   20.409995	   13.993568	
+   39.796241	    3.208213	   13.993568	
+   39.796241	   20.409995	   13.993568	
+   12.077044	    0.824292	   15.051559	
+   12.077044	   18.026074	   15.051559	
+   29.278826	    0.824292	   15.051559	
+   29.278826	   18.026074	   15.051559	
+   46.480607	    0.824292	   15.051559	
+   46.480607	   18.026074	   15.051559	
+    9.693106	    7.508676	   16.109566	
+    9.693106	   24.710457	   16.109566	
+   26.894887	    7.508676	   16.109566	
+   26.894887	   24.710457	   16.109566	
+   44.096669	    7.508676	   16.109566	
+   44.096669	   24.710457	   16.109566	
+    6.450668	   13.725611	   16.377507	
+    6.450668	   30.927393	   16.377507	
+   23.652450	   13.725611	   16.377507	
+   23.652450	   30.927393	   16.377507	
+   40.854231	   13.725611	   16.377507	
+   40.854231	   30.927393	   16.377507	
+
+Max eigenvalue of -0.5*Lap is 328.5069588219576, time taken: 0.021 ms
+h_eff = 0.18, npl = 38
+[34m[k1_red,k2_red,k3_red] =   0.0000   0.0000   0.0000
+[0m[34m[k1_red,k2_red,k3_red] =   0.0000   0.0000   0.5000
+[0mAfter symmetry reduction, Nkpts_sym = 2
+k1[ 0]:   0.0000, k2[ 0]:   0.0000, k3[ 0]:   0.0000, kptwt[ 0]: 1.000 
+k1[ 1]:   0.0000, k2[ 1]:   0.0000, k3[ 1]:   0.5000, kptwt[ 1]: 1.000 
+----------------------
+Estimated memory usage
+Total: 615.57 GB
+orbitals             : 614.47 GB
+global sized vectors : 1.10 GB
+----------------------------------------------
+Estimated memory usage per processor: 1.60 GB
+
+rank = 0, Copying data from SPARC_Input into SPARC & set up subcomm took 1.529 ms
+Set up communicators.
+
+--set up spincomm took 42.172 ms
+
+--set up kptcomm took 1.236 ms
+
+ kpt_topo #0, kptcomm topology dims = {8, 6, 4}, nodes/proc = {35.88,31.83,24.00}
+
+ kpt_topo #1, kptcomm topology dims = {8, 6, 4}, nodes/proc = {35.88,31.83,24.00}
+
+--set up bandcomm took 0.444 ms
+rank = 0, dmcomm dims = {1, 1, 1}
+gridsizes = [287, 191, 96], Nstates = 653, dmcomm dims = [1, 1, 1]
+
+--set up dmcomm took 0.012 ms
+
+--set up blacscomm took 43.112 ms
+rank = 0, size_blacscomm = 192, ScaLAPACK topology Dims = (192, 1)
+nproc = 384, size_blacscomm = 192 = dims[0] * dims[1] = (192, 1)
+rank =  0, my blacs rank = 0, BLCYC size (5262432, 4), actual size (5262432, 4)
+rank = 0, nr_Hp = 653, nc_Hp = 653
+========================================================================
+Poisson domain decomposition:np total = 384, {Nx, Ny, Nz} = {287, 191, 96}
+nproc used = 384 = {12, 8, 4}, nodes/proc = {23.92, 23.88, 24.00}
+
+
+--set up dmcomm_phi took 37.934 ms
+======Set_D2D_Target: find receivers in each process (c_ndgrid) in send_comm took 0.001 ms
+======Set_D2D_Target: Gather and Scatter receivers in send_comm took 167.354 ms
+======Set_D2D_Target: find receivers in each process (c_ndgrid) in send_comm took 0.002 ms
+======Set_D2D_Target: Gather and Scatter receivers in send_comm took 0.024 ms
+
+Calculate_SplineDerivRadFun took 0.186 ms
+Rbmax_x = 7.298096, Rbmax_y = 7.301234, Rbmax_z = 7.291852
+rlen_ex = 148877, nxp = 53, nyp = 53, nzp = 53
+time spent on qsort: 2.028 ms.
+time spent on vectorized spline interp: 5.897 ms.
+Z = 9,rb_x = 4.801148,rb_y = 4.802717,rb_z = 4.798026,error = 3.200E-06,Bint = -8.9999968003348
+Z = 9,rb_x = 6.049622,rb_y = 6.051975,rb_z = 6.044939,error = 3.652E-06,Bint = -8.9999963484368
+Z = 9,rb_x = 6.673859,rb_y = 6.676604,rb_z = 6.668396,error = 3.409E-09,Bint = -9.0000000034092
+Z = 9,rb_x = 6.361740,rb_y = 6.364290,rb_z = 6.356667,error = 6.468E-08,Bint = -9.0000000646835
+Z = 9,rb_x = 6.205681,rb_y = 6.208133,rb_z = 6.200803,error = 6.888E-07,Bint = -8.9999993111628
+dx = 0.179810, dy = 0.180123, dz = 0.179185, Ncube_x = 36, Ncube_y = 36, Ncube_z = 36
+ityp = 0, converged in 5 iters, err_cur = 6.47E-08, TOL = 1.00E-07, rb = {6.361740, 6.364290, 6.356667}, after proj to grid rb = {6.473144, 6.484441, 6.450668}
+time for finding rb using bisection: 5.365 ms.
+
+Calculating rb for all atom types took 13.648 ms
+Start ground-state calculation.
+Calculating electron density ... 
+Finding atoms that influence the local process domain ... 
+
+Finding influencing atoms took 0.230 ms
+Calculating pseudocharge density ... 
+the global sum of int_b = -1080.0000013446593, sum_int_rho = 1064.1243622590068
+PosCharge = 1080.000001344659, NegCharge = -1064.124362259007, scal_fac = 1.014918969670
+After scaling, int_rho = 1080.0000013446595, PosCharge + NegCharge - NetCharge = -2.274e-13
+--Calculate Vref took 1.683 ms
+--Calculate rho_guess took 14.588 ms
+
+ integral of b = -1080.0000013446593,
+ int{b} + Nelectron + NetCharge = -1.345e-06,
+ Esc = -5675.9756611625780,
+ MPI_Reduce took 39.806 ms
+
+Calculating b & b_ref took 86.419 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 22.119 ms
+[0m
+Finding nonlocal influencing atoms in psi-domain took 23.920 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 30.081 ms
+[0m
+Calculating nonlocal projectors in psi-domain took 443.531 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 0.136 ms
+[0m
+Finding nonlocal influencing atoms in kptcomm_topo took 0.444 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 0.164 ms
+[0m
+Calculating nonlocal projectors in kptcomm_topo took 3.002 ms
+Initializing electron density ... 
+Initializing Kohn-Sham orbitals ... 
+Finished setting random orbitals. Time taken: 1342.103 ms
+Start SCF calculation ... 
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -1080.00000134465927, int_rho = 1080.00000134465995, int_b + int_rho = 5.067e-13, checking this took 590.153 ms
+2-norm of RHS = 2760.8194530253095, which took 1.134 ms
+
+iter_count = 792, r_2norm = 2.747e-04, tol*||rhs|| = 2.761e-04
+
+Anderson update took 1457.915 ms, out of which F'*F took 216.396 ms; b-Ax took 1891.155 ms, out of which Lap took 1859.797 ms
+Solving Poisson took 4060.830 ms
+rank = 0, XC calculation took 1.330 ms
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.003 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.006 ms
+======D2D: initiated sending and receiving took 1.965 ms
+---Transfer Veff_loc: D2D took 77.961 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 28.521 ms
+---Transfer Veff_loc: mpi_bcast (count = 5262432) to all bandcomms took 163.866 ms
+rank = 0, Veff calculation and Bcast (non-blocking) took 271.601 ms
+-------------
+SCF iter 1  
+-------------
+
+Time for setting up initial guess for Lanczos: 1.849 ms
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.006 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.007 ms
+======D2D: initiated sending and receiving took 27.553 ms
+
+Start Lanczos algorithm ...
+Wait for veff to be bcasted took 0.001 ms
+rank =  0, One H*x took 132.874 ms
+    Lanczos iter 55, eigmin  = -1.844855652, eigmax = 328.116803423, err_eigmin = 3.459e-07, err_eigmax = 9.351e-03
+rank =   0, Lanczos took 969.529 ms, eigmin = -1.844855651995, eigmax = 331.397971457575
+
+ Chebfilt 1, in Chebyshev filtering, lambda_cutoff = 164.726558, lowerbound = -1.944856, upperbound = 331.397971
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (4 columns, degree = 38): 375770.255 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 5799.926 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 7698.527 ms
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 21594 RUNNING AT iw-c42-18.pace.gatech.edu
+=   EXIT CODE: 9
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================

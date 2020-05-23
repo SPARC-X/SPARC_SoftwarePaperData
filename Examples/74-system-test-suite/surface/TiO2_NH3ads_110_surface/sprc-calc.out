@@ -1,0 +1,199 @@
+***************************************************************************
+*                           SPARC (Apr 25, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Apr 28 22:14:24 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 12.3120983893293 11.3081211370082 46.0697004497688 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 68 63 256
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 4 4 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 37
+NSTATES: 240
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 3.25E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0
+MIXING_PARAMETER: 0.1
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: sprc-calc
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 12
+NP_BAND_PARAL: 21
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 4 4 16
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  256
+Mesh spacing in x-direction        :  0.18106 (Bohr)
+Mesh spacing in y-direction        :  0.179494 (Bohr)
+Mesh spacing in z direction        :  0.17996 (Bohr)
+Number of symmetry adapted k-points:  12
+Output printed to                  :  sprc-calc.out
+Total number of atom types         :  4
+Total number of atoms              :  52
+Total number of electrons          :  392
+Atom type 1  (valence electrons)   :  H 1
+Pseudopotential                    :  H.pot
+Pseudocharge radii of atom type 1  :  6.52 6.46 6.48 (x, y, z dir)
+Number of atoms of type 1          :  3
+Atom type 2  (valence electrons)   :  N 5
+Pseudopotential                    :  N.pot
+Pseudocharge radii of atom type 2  :  6.52 6.46 6.48 (x, y, z dir)
+Number of atoms of type 2          :  1
+Atom type 3  (valence electrons)   :  O 6
+Pseudopotential                    :  O.pot
+Pseudocharge radii of atom type 3  :  6.52 6.46 6.48 (x, y, z dir)
+Number of atoms of type 3          :  32
+Atom type 4  (valence electrons)   :  Ti 12
+Pseudopotential                    :  Ti.pot
+Pseudocharge radii of atom type 4  :  6.52 6.46 6.48 (x, y, z dir)
+Number of atoms of type 4          :  16
+Estimated total memory usage       :  282.62 GB
+Estimated memory per processor     :  1.10 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.7902300374E+01        1.412E-01        877.254
+2            -2.7895952399E+01        1.197E-01        219.593
+3            -2.7864867360E+01        6.472E-02        219.647
+4            -2.7866425358E+01        4.669E-02        216.891
+5            -2.7864950086E+01        3.885E-02        221.172
+6            -2.7862164409E+01        1.494E-02        220.337
+7            -2.7861945711E+01        8.028E-03        222.018
+8            -2.7861926932E+01        6.450E-03        222.477
+9            -2.7861971475E+01        1.036E-02        224.933
+10           -2.7861814430E+01        3.484E-03        218.088
+11           -2.7861799041E+01        2.322E-03        223.718
+12           -2.7861789300E+01        3.558E-03        223.459
+13           -2.7861753296E+01        1.445E-03        222.723
+14           -2.7861738337E+01        1.448E-03        225.533
+15           -2.7861729597E+01        1.318E-03        226.552
+16           -2.7861729336E+01        1.143E-03        218.981
+17           -2.7861728842E+01        1.139E-03        225.164
+18           -2.7861701598E+01        8.731E-04        222.217
+19           -2.7861698500E+01        7.231E-04        222.041
+20           -2.7861685940E+01        6.671E-04        219.091
+21           -2.7861671289E+01        5.965E-04        222.239
+22           -2.7861664619E+01        5.698E-04        221.073
+23           -2.7861658057E+01        5.140E-04        217.484
+24           -2.7861648380E+01        4.757E-04        220.357
+25           -2.7861638229E+01        4.381E-04        222.095
+26           -2.7861630982E+01        4.146E-04        220.350
+27           -2.7861630463E+01        4.046E-04        221.432
+28           -2.7861622834E+01        3.785E-04        222.569
+29           -2.7861619135E+01        3.615E-04        224.639
+30           -2.7861608298E+01        3.337E-04        217.707
+31           -2.7861607199E+01        3.268E-04        223.900
+32           -2.7861601400E+01        3.133E-04        224.946
+33           -2.7861597190E+01        2.926E-04        223.498
+34           -2.7861593531E+01        2.740E-04        222.042
+35           -2.7861590713E+01        2.671E-04        222.707
+36           -2.7861590640E+01        2.615E-04        221.800
+37           -2.7861587375E+01        2.336E-04        223.008
+38           -2.7861585576E+01        2.219E-04        220.867
+39           -2.7861585854E+01        2.166E-04        224.040
+40           -2.7861588086E+01        2.044E-04        223.054
+41           -2.7861590104E+01        1.870E-04        223.001
+42           -2.7861590148E+01        1.790E-04        219.371
+43           -2.7861589187E+01        1.698E-04        224.578
+44           -2.7861589759E+01        1.619E-04        221.303
+45           -2.7861589581E+01        1.516E-04        225.177
+46           -2.7861588349E+01        1.307E-04        220.752
+47           -2.7861588355E+01        1.224E-04        221.916
+48           -2.7861588629E+01        1.235E-04        222.014
+49           -2.7861588375E+01        1.088E-04        222.778
+50           -2.7861588999E+01        1.243E-04        223.087
+51           -2.7861588926E+01        1.365E-04        223.317
+52           -2.7861589234E+01        1.029E-04        224.042
+53           -2.7861589100E+01        9.400E-05        225.485
+54           -2.7861589243E+01        9.759E-05        222.126
+55           -2.7861589200E+01        1.035E-04        222.347
+56           -2.7861589226E+01        7.136E-05        223.304
+57           -2.7861588652E+01        7.122E-05        220.831
+58           -2.7861588364E+01        5.671E-05        221.036
+59           -2.7861588141E+01        5.457E-05        224.369
+60           -2.7861588250E+01        4.088E-05        225.493
+61           -2.7861588257E+01        3.703E-05        224.376
+62           -2.7861588482E+01        3.169E-05        220.790
+63           -2.7861588289E+01        2.833E-05        220.866
+64           -2.7861588481E+01        2.605E-05        227.268
+65           -2.7861588436E+01        2.448E-05        223.292
+66           -2.7861588538E+01        2.255E-05        225.590
+67           -2.7861588577E+01        1.992E-05        222.725
+68           -2.7861588465E+01        1.883E-05        218.230
+69           -2.7861588626E+01        1.746E-05        226.861
+70           -2.7861588704E+01        1.622E-05        220.645
+71           -2.7861588500E+01        1.515E-05        222.063
+72           -2.7861588814E+01        1.400E-05        216.215
+73           -2.7861588637E+01        1.285E-05        222.468
+74           -2.7861588726E+01        1.233E-05        224.814
+75           -2.7861588886E+01        1.035E-05        223.682
+76           -2.7861588866E+01        9.654E-06        224.368
+Total number of SCF: 76    
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -2.7861588997E+01 (Ha/atom)
+Total free energy                  : -1.4488026278E+03 (Ha)
+Band structure energy              : -2.4337084428E+02 (Ha)
+Exchange correlation energy        : -2.3006793366E+02 (Ha)
+Self and correction energy         : -2.2411815614E+03 (Ha)
+Entropy*kb*T                       : -1.5946413633E-08 (Ha)
+Fermi level                        :  2.2832677190E-02 (Ha)
+RMS force                          :  2.8832559280E-02 (Ha/Bohr)
+Maximum force                      :  6.8324855759E-02 (Ha/Bohr)
+Time for force calculation         :  5.303 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  17562.513 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

@@ -1,0 +1,389 @@
+***************************************************************************
+*                           SPARC (May 11, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Thu May 14 02:44:19 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 26.96 26.96 26.96 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 87 87 87
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Fermi-Dirac
+ELEC_TEMP: 315.775024804068
+CHEB_DEGREE: 25
+NSTATES: 1200
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+TWTIME: 1E+09
+MD_FLAG: 1
+MD_METHOD: NVT_NH
+MD_TIMESTEP: 1.5
+MD_NSTEP: 10
+ION_VEL_DSTR: 2
+ION_VEL_DSTR_RAND: 0
+ION_TEMP: 315.775024804068
+ION_TEMP_END: 315.775024804068
+QMASS: 1653.65493345972
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 100
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: none
+#WARNING: the preconditioner for SCF has been turned off, this 
+#might lead to slow SCF convergence. To specify SCF preconditioner, 
+#use 'MIXING_PRECOND' in the .inpt file
+MIXING_PARAMETER: 0.4
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 0
+PRINT_ATOMS: 0
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+PRINT_MDOUT: 0
+PRINT_VELS: 1
+PRINT_RESTART: 0
+OUTPUT_FILE: c512
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 300
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 5 6 10
+EIG_SERIAL_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  300
+Mesh spacing                       :  0.309885 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  c512.out
+Total number of atom types         :  1
+Total number of atoms              :  512
+Total number of electrons          :  2048
+Atom type 1  (valence electrons)   :  C 4
+Pseudopotential                    :  c_rc1.5a.psp8
+Atomic mass                        :  12.0106
+Pseudocharge radii of atom type 1  :  6.82 6.82 6.82 (x, y, z dir)
+Number of atoms of type 1          :  512
+Estimated total memory usage       :  35.46 GB
+Estimated memory per processor     :  121.04 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7240510776E+00        1.630E-01        22.350
+2            -5.7142543111E+00        8.294E-02        5.566
+3            -5.7112926248E+00        1.201E-02        5.621
+4            -5.7112833025E+00        6.160E-03        5.579
+5            -5.7112818976E+00        2.345E-03        5.540
+6            -5.7112720451E+00        4.799E-04        5.505
+7            -5.7112715879E+00        1.553E-04        5.741
+8            -5.7112716305E+00        6.639E-05        5.540
+Total number of SCF: 8     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7112715742E+00 (Ha/atom)
+Total free energy                  : -2.9241710460E+03 (Ha)
+Band structure energy              : -2.2230301378E+01 (Ha)
+Exchange correlation energy        : -9.0520715620E+02 (Ha)
+Self and correction energy         : -4.4739465573E+03 (Ha)
+Entropy*kb*T                       : -2.1908063823E-07 (Ha)
+Fermi level                        :  3.4026853223E-01 (Ha)
+RMS force                          :  6.9181132490E-02 (Ha/Bohr)
+Maximum force                      :  1.4875876384E-01 (Ha/Bohr)
+Time for force calculation         :  0.206 (sec)
+===================================================================
+                    Self Consistent Field (SCF#2)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7126183806E+00        3.037E-02        5.632
+2            -5.7118334231E+00        1.467E-02        5.537
+3            -5.7116771758E+00        7.174E-03        5.574
+4            -5.7116338582E+00        3.378E-03        5.525
+5            -5.7116179280E+00        1.366E-03        5.725
+6            -5.7116163220E+00        6.540E-04        5.563
+7            -5.7116161313E+00        2.530E-04        5.514
+8            -5.7116160527E+00        8.659E-05        5.576
+Total number of SCF: 8     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7116160143E+00 (Ha/atom)
+Total free energy                  : -2.9243473993E+03 (Ha)
+Band structure energy              : -2.2093780548E+01 (Ha)
+Exchange correlation energy        : -9.0516769979E+02 (Ha)
+Self and correction energy         : -4.4739472431E+03 (Ha)
+Entropy*kb*T                       : -2.1802247888E-07 (Ha)
+Fermi level                        :  3.3909938852E-01 (Ha)
+RMS force                          :  6.6071606482E-02 (Ha/Bohr)
+Maximum force                      :  1.4984417418E-01 (Ha/Bohr)
+Time for force calculation         :  0.201 (sec)
+MD step time                       :  45.078 (sec)
+===================================================================
+                    Self Consistent Field (SCF#3)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7134663062E+00        3.173E-02        5.578
+2            -5.7126327065E+00        1.458E-02        5.557
+3            -5.7125049451E+00        7.255E-03        5.515
+4            -5.7124614623E+00        3.378E-03        5.511
+5            -5.7124451320E+00        1.363E-03        5.567
+6            -5.7124436213E+00        6.559E-04        5.466
+7            -5.7124434098E+00        2.439E-04        5.563
+8            -5.7124433299E+00        8.512E-05        5.485
+Total number of SCF: 8     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7124432954E+00 (Ha/atom)
+Total free energy                  : -2.9247709673E+03 (Ha)
+Band structure energy              : -2.1802186989E+01 (Ha)
+Exchange correlation energy        : -9.0508002042E+02 (Ha)
+Self and correction energy         : -4.4739476005E+03 (Ha)
+Entropy*kb*T                       : -2.1789394008E-07 (Ha)
+Fermi level                        :  3.3684323303E-01 (Ha)
+RMS force                          :  5.8230483208E-02 (Ha/Bohr)
+Maximum force                      :  1.2898783852E-01 (Ha/Bohr)
+Time for force calculation         :  0.199 (sec)
+MD step time                       :  44.612 (sec)
+===================================================================
+                    Self Consistent Field (SCF#4)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7133143561E+00        5.599E-04        5.573
+2            -5.7133204044E+00        3.102E-04        5.516
+3            -5.7133203743E+00        1.809E-04        5.615
+4            -5.7133204076E+00        1.045E-04        5.489
+5            -5.7133204027E+00        3.477E-05        5.516
+Total number of SCF: 5     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7133203651E+00 (Ha/atom)
+Total free energy                  : -2.9252200269E+03 (Ha)
+Band structure energy              : -2.1512803853E+01 (Ha)
+Exchange correlation energy        : -9.0499209245E+02 (Ha)
+Self and correction energy         : -4.4739475266E+03 (Ha)
+Entropy*kb*T                       : -2.1938672310E-07 (Ha)
+Fermi level                        :  3.3455849160E-01 (Ha)
+RMS force                          :  4.9037676931E-02 (Ha/Bohr)
+Maximum force                      :  1.0275795084E-01 (Ha/Bohr)
+Time for force calculation         :  0.205 (sec)
+MD step time                       :  28.070 (sec)
+===================================================================
+                    Self Consistent Field (SCF#5)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7141051231E+00        6.287E-04        5.521
+2            -5.7141105794E+00        4.438E-04        5.548
+3            -5.7141102443E+00        1.781E-04        5.508
+4            -5.7141102557E+00        9.985E-05        5.489
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7141102269E+00 (Ha/atom)
+Total free energy                  : -2.9256244362E+03 (Ha)
+Band structure energy              : -2.1266989760E+01 (Ha)
+Exchange correlation energy        : -9.0491755138E+02 (Ha)
+Self and correction energy         : -4.4739472433E+03 (Ha)
+Entropy*kb*T                       : -2.2285140651E-07 (Ha)
+Fermi level                        :  3.3269698567E-01 (Ha)
+RMS force                          :  3.9737746022E-02 (Ha/Bohr)
+Maximum force                      :  8.2505352162E-02 (Ha/Bohr)
+Time for force calculation         :  0.203 (sec)
+MD step time                       :  22.421 (sec)
+===================================================================
+                    Self Consistent Field (SCF#6)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7147839890E+00        5.479E-04        5.584
+2            -5.7147904051E+00        2.656E-04        5.516
+3            -5.7147903756E+00        1.483E-04        5.537
+4            -5.7147903678E+00        9.058E-05        5.483
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7147903561E+00 (Ha/atom)
+Total free energy                  : -2.9259726623E+03 (Ha)
+Band structure energy              : -2.1077962616E+01 (Ha)
+Exchange correlation energy        : -9.0485956250E+02 (Ha)
+Self and correction energy         : -4.4739469339E+03 (Ha)
+Entropy*kb*T                       : -2.2378602682E-07 (Ha)
+Fermi level                        :  3.3147294760E-01 (Ha)
+RMS force                          :  3.0306991841E-02 (Ha/Bohr)
+Maximum force                      :  6.2106101093E-02 (Ha/Bohr)
+Time for force calculation         :  0.209 (sec)
+MD step time                       :  22.483 (sec)
+===================================================================
+                    Self Consistent Field (SCF#7)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7152349105E+00        5.092E-04        5.597
+2            -5.7152411678E+00        3.432E-04        5.474
+3            -5.7152410067E+00        1.561E-04        5.503
+4            -5.7152409855E+00        9.853E-05        5.453
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7152409986E+00 (Ha/atom)
+Total free energy                  : -2.9262033913E+03 (Ha)
+Band structure energy              : -2.0981069628E+01 (Ha)
+Exchange correlation energy        : -9.0482854636E+02 (Ha)
+Self and correction energy         : -4.4739466923E+03 (Ha)
+Entropy*kb*T                       : -2.2195693595E-07 (Ha)
+Fermi level                        :  3.3105980921E-01 (Ha)
+RMS force                          :  2.3351460996E-02 (Ha/Bohr)
+Maximum force                      :  5.6894044976E-02 (Ha/Bohr)
+Time for force calculation         :  0.201 (sec)
+MD step time                       :  22.380 (sec)
+===================================================================
+                    Self Consistent Field (SCF#8)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7154674063E+00        4.107E-04        5.527
+2            -5.7154730248E+00        2.081E-04        5.578
+3            -5.7154730147E+00        1.236E-04        5.719
+4            -5.7154730074E+00        7.804E-05        5.514
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7154730053E+00 (Ha/atom)
+Total free energy                  : -2.9263221787E+03 (Ha)
+Band structure energy              : -2.0968051407E+01 (Ha)
+Exchange correlation energy        : -9.0482202920E+02 (Ha)
+Self and correction energy         : -4.4739464792E+03 (Ha)
+Entropy*kb*T                       : -2.2142575012E-07 (Ha)
+Fermi level                        :  3.3113348774E-01 (Ha)
+RMS force                          :  2.0028304787E-02 (Ha/Bohr)
+Maximum force                      :  5.1516785943E-02 (Ha/Bohr)
+Time for force calculation         :  0.199 (sec)
+MD step time                       :  22.698 (sec)
+===================================================================
+                    Self Consistent Field (SCF#9)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7155243818E+00        5.011E-04        5.501
+2            -5.7155305948E+00        3.221E-04        5.491
+3            -5.7155304615E+00        1.445E-04        5.732
+4            -5.7155304624E+00        9.360E-05        5.490
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7155304622E+00 (Ha/atom)
+Total free energy                  : -2.9263515966E+03 (Ha)
+Band structure energy              : -2.1024086220E+01 (Ha)
+Exchange correlation energy        : -9.0483614450E+02 (Ha)
+Self and correction energy         : -4.4739462433E+03 (Ha)
+Entropy*kb*T                       : -2.2231899737E-07 (Ha)
+Fermi level                        :  3.3147935894E-01 (Ha)
+RMS force                          :  2.0758331214E-02 (Ha/Bohr)
+Maximum force                      :  5.0485572116E-02 (Ha/Bohr)
+Time for force calculation         :  0.202 (sec)
+MD step time                       :  22.544 (sec)
+===================================================================
+                    Self Consistent Field (SCF#10)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7154014744E+00        4.914E-04        5.536
+2            -5.7154081463E+00        2.707E-04        5.565
+3            -5.7154080934E+00        1.377E-04        5.477
+4            -5.7154080983E+00        8.790E-05        5.434
+Total number of SCF: 4     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1080 = 0.000000000000000.
+Occupation of state 1200 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7154080682E+00 (Ha/atom)
+Total free energy                  : -2.9262889309E+03 (Ha)
+Band structure energy              : -2.1145196396E+01 (Ha)
+Exchange correlation energy        : -9.0486998851E+02 (Ha)
+Self and correction energy         : -4.4739459775E+03 (Ha)
+Entropy*kb*T                       : -2.2292183751E-07 (Ha)
+Fermi level                        :  3.3198700077E-01 (Ha)
+RMS force                          :  2.5355601438E-02 (Ha/Bohr)
+Maximum force                      :  5.6803467663E-02 (Ha/Bohr)
+Time for force calculation         :  0.199 (sec)
+MD step time                       :  22.354 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  314.739 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

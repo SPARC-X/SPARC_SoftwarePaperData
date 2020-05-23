@@ -1,0 +1,83 @@
+***************************************************************************
+*                           SPARC (Apr 25, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Apr 28 20:23:32 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 25.144879151142 30.5910856870902 31.8217984677594 
+LATVEC:
+1 0 0 
+0.427397267517084 0.904063922363308 0 
+0 0 1 
+FD_GRID: 140 170 177
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 2 2 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 38
+NSTATES: 293
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 3.23E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0
+MIXING_PARAMETER: 0.1
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: sprc-calc
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 4
+NP_BAND_PARAL: 64
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 4 8 8
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  256
+Mesh spacing in x-direction        :  0.179606 (Bohr)
+Mesh spacing in y-direction        :  0.179948 (Bohr)
+Mesh spacing in z direction        :  0.179784 (Bohr)
+Number of symmetry adapted k-points:  4
+Output printed to                  :  sprc-calc.out
+Total number of atom types         :  1
+Total number of atoms              :  32
+Total number of electrons          :  480
+Atom type 1  (valence electrons)   :  Bi 15
+Pseudopotential                    :  Bi.pot
+Pseudocharge radii of atom type 1  :  7.18 7.20 7.19 (x, y, z dir)
+Number of atoms of type 1          :  32
+Estimated total memory usage       :  442.30 GB
+Estimated memory per processor     :  1.73 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)

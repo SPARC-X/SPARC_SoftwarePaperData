@@ -1,0 +1,140 @@
+***************************************************************************
+*                           SPARC (May 06, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sat May  9 08:51:10 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 9.55220954170357 9.55220954170357 39.3930802080244 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 40 40 164
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 4 4 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 31
+NSTATES: 141
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.24E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.24E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.24E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 5.72E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: input_file_store/sprc-calc_96
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 10
+NP_BAND_PARAL: 9
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 2 3 16
+EIG_USE_LAPACK: 1
+EIG_LAPACK_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  96
+Mesh spacing in x-direction        :  0.238805 (Bohr)
+Mesh spacing in y-direction        :  0.238805 (Bohr)
+Mesh spacing in z direction        :  0.240202 (Bohr)
+Number of symmetry adapted k-points:  10
+Output printed to                  :  input_file_store/sprc-calc_96.out
+Total number of atom types         :  2
+Total number of atoms              :  16
+Total number of electrons          :  228
+Atom type 1  (valence electrons)   :  Re 15
+Pseudopotential                    :  input_file_store/Re.pot
+Pseudocharge radii of atom type 1  :  6.45 6.45 6.49 (x, y, z dir)
+Number of atoms of type 1          :  4
+Atom type 2  (valence electrons)   :  W 14
+Pseudopotential                    :  input_file_store/W.pot
+Pseudocharge radii of atom type 2  :  6.45 6.45 6.49 (x, y, z dir)
+Number of atoms of type 2          :  12
+Estimated total memory usage       :  33.13 GB
+Estimated memory per processor     :  353.43 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -7.1519922477E+01        4.700E-02        55.452
+2            -7.1533098554E+01        3.409E-02        13.800
+3            -7.1532830461E+01        1.896E-02        13.846
+4            -7.1532175572E+01        8.207E-03        13.770
+5            -7.1532350832E+01        7.345E-03        13.779
+6            -7.1532168688E+01        2.955E-03        13.936
+7            -7.1532150370E+01        9.676E-04        13.685
+8            -7.1532144730E+01        5.767E-04        13.721
+9            -7.1532142239E+01        4.315E-04        13.670
+10           -7.1532145539E+01        2.573E-04        13.841
+11           -7.1532137568E+01        1.914E-04        13.598
+12           -7.1532138806E+01        1.939E-04        14.170
+13           -7.1532140852E+01        1.835E-04        13.634
+14           -7.1532139849E+01        1.423E-04        13.734
+15           -7.1532133550E+01        1.607E-04        13.683
+16           -7.1532136013E+01        1.314E-04        13.584
+17           -7.1532139315E+01        1.889E-04        14.196
+18           -7.1532136132E+01        6.514E-05        13.665
+Total number of SCF: 18    
+
+k = [-0.250, -0.250, 0.000]
+Occupation of state 127 = 0.000000000000000.
+Occupation of state 141 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -7.1532150869E+01 (Ha/atom)
+Total free energy                  : -1.1445144139E+03 (Ha)
+Band structure energy              : -1.9035164185E+02 (Ha)
+Exchange correlation energy        : -1.2417135691E+02 (Ha)
+Self and correction energy         : -1.9623710061E+03 (Ha)
+Entropy*kb*T                       : -3.0536898771E-03 (Ha)
+Fermi level                        :  2.1000602707E-01 (Ha)
+RMS force                          :  2.3217817552E-02 (Ha/Bohr)
+Maximum force                      :  8.4924286064E-02 (Ha/Bohr)
+Time for force calculation         :  0.513 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  290.693 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

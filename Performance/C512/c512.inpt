@@ -1,0 +1,35 @@
+#number of atoms: 512
+#4 x 4 x 4 supercell
+CELL: 26.960 26.960 26.960
+BC: P P P
+EXCHANGE_CORRELATION: LDA_PZ
+
+ELEC_TEMP_TYPE: Fermi-Dirac
+SMEARING: 0.001 
+NSTATES: 1200
+
+MESH_SPACING: 0.31
+FD_ORDER: 12
+
+MIXING_VARIABLE: density      # density (default), potential
+MIXING_PRECOND: none          # none (default potential), kerker (default density)
+#PRECOND_KERKER_KTF: 1.0       # Thomas-Fermi screening length; default 1.0
+#PRECOND_KERKER_THRESH: 0.1    # threshold in truncated Kerker: default 0.1
+MIXING_PARAMETER: 0.4         # default 0.3
+TOL_SCF: 1e-4
+
+PRINT_ATOMS: 0
+PRINT_FORCES: 0
+PRINT_MDOUT: 0
+PRINT_EIGEN: 0
+
+MD_FLAG:  1
+MD_METHOD: NVT_NH
+ION_TEMP: 315.7750248040675
+MD_TIMESTEP: 1.5 #fs
+MD_NSTEP: 10
+
+RESTART_FLAG: 0         # 1 = restart MD from .restart file if present, 0 = start new (default)
+PRINT_RESTART: 0        # 1 = output .restart files for restarting, 0 = don't
+PRINT_RESTART_FQ: 20    # .restart files output every PRINT_RESTART_FQ steps
+

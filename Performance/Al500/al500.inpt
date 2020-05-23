@@ -1,0 +1,24 @@
+# Al 5x5x5 supercell, 500 atoms
+CELL: 38.25 38.25 38.25
+MESH_SPACING: 0.765
+BC: P P P
+EXCHANGE_CORRELATION: LDA_PZ
+TOL_SCF: 1e-4
+TOL_POISSON: 1e-7
+TOL_PSEUDOCHARGE: 1e-3
+MIXING_PARAMETER: 1.0
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+PRECOND_KERKER_THRESH: 0
+PRINT_ATOMS: 0
+
+MD_FLAG:  1
+MD_METHOD: NVT_NH
+MD_TIMESTEP: 1 #fs
+MD_NSTEP: 10
+ION_TEMP: 1120
+RESTART_FLAG: 0         # 1 = restart MD from .restart file if present, 0 = start new (default)
+PRINT_RESTART: 1        # output .restart files for restarting
+PRINT_RESTART_FQ: 20    # .restart files output every PRINT_RESTART_FQ steps
+
+NSTATES: 900

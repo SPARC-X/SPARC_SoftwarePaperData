@@ -1,0 +1,102 @@
+***************************************************************************
+*                           SPARC (May 06, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sat May  9 06:00:16 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 9.55220954170357 9.55220954170357 39.3930802080244 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 40 40 164
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 4 4 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 31
+NSTATES: 141
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.24E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.24E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.24E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 5.72E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: input_file_store/sprc-calc_6
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 6
+NP_BAND_PARAL: 1
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 1 1 6
+EIG_USE_LAPACK: 1
+EIG_LAPACK_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  6
+Mesh spacing in x-direction        :  0.238805 (Bohr)
+Mesh spacing in y-direction        :  0.238805 (Bohr)
+Mesh spacing in z direction        :  0.240202 (Bohr)
+Number of symmetry adapted k-points:  10
+Output printed to                  :  input_file_store/sprc-calc_6.out
+Total number of atom types         :  2
+Total number of atoms              :  16
+Total number of electrons          :  228
+Atom type 1  (valence electrons)   :  Re 15
+Pseudopotential                    :  input_file_store/Re.pot
+Pseudocharge radii of atom type 1  :  6.45 6.45 6.49 (x, y, z dir)
+Number of atoms of type 1          :  4
+Atom type 2  (valence electrons)   :  W 14
+Pseudopotential                    :  input_file_store/W.pot
+Pseudocharge radii of atom type 2  :  6.45 6.45 6.49 (x, y, z dir)
+Number of atoms of type 2          :  12
+Estimated total memory usage       :  33.13 GB
+Estimated memory per processor     :  5.52 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -7.1519948585E+01        4.690E-02        991.076
+2            -7.1533450093E+01        3.446E-02        249.970
+3            -7.1533514300E+01        2.131E-02        246.508
+4            -7.1533662312E+01        1.629E-02        220.311
+5            -7.1532231198E+01        6.247E-03        218.682
+6            -7.1532163862E+01        3.119E-03        219.127
+7            -7.1532148024E+01        1.017E-03        217.998
+8            -7.1532144132E+01        5.936E-04        219.898
+9            -7.1532141255E+01        4.115E-04        219.078
+10           -7.1532140943E+01        2.727E-04        220.153
+11           -7.1532137547E+01        2.008E-04        218.816
+12           -7.1532138956E+01        1.971E-04        219.580

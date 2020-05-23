@@ -1,0 +1,237 @@
+
+Creating SPARC_INPUT_MPI datatype took 0.090 ms
+Initializing ...
+Checking input arguments parsed by command line.
+
+Checking inputs parsed by commandline took 0.202 ms
+
+Set default values took 0.012 ms
+Reading input file sprc-calc.inpt
+
+Reading input file took 55.895 ms
+Broadcasting the input parameters took 56.952 ms
+Reading ion file sprc-calc.ion
+Number of atom types : 1.
+Total number of atoms: 32.
+[32m
+Time for finding element is 0.003 ms
+[32mElement type for atom_type Bi is Bi
+[0m[32mDefault atomic mass for Bi is 208.980400
+[0mpseudo_dir # 1 = Bi.pot
+
+Reading ion file took 25.524 ms
+Reading pseudopotential (PSP) file.
+Reading pseudopotential: Bi.pot
+Input element type: Bi
+pspcod = 8, pspxc = 2
+
+Reading pseudopotential file took 31.518 ms
+
+Freeing SPARC_INPUT_MPI datatype took 0.010 ms
+Bcast pre-info. took 30.819 ms
+Broadcasting Atom info. using MPI_Pack & MPI_Unpack in SPARC took 2.434 ms
+
+Checking existence of (0) out file(s) took 0.034 ms
+
+
+CELL_TYP: 11
+
+
+Range:
+   25.144879	   30.591086	   31.821798
+
+COORD AFTER MAPPING:
+    7.669802	   12.312851	MPI_Bcast packed buff of length 58444 took 3.156 ms
+   11.338357	
+    1.011254	   12.087179	   11.929763	
+    3.778419	    6.121795	   14.189583	
+    9.692311	    5.896124	   14.780989	
+   12.459476	   15.226282	   17.040810	
+    5.800928	   15.000611	   17.632215	
+    8.568093	    9.035227	   19.892036	
+    1.909545	    8.809555	   20.483442	
+    7.669802	   27.608394	   11.338357	
+    1.011254	   27.382722	   11.929763	
+    3.778419	   21.417338	   14.189583	
+    9.692311	   21.191666	   14.780989	
+   12.459476	   30.521825	   17.040810	
+    5.800928	   30.296154	   17.632215	
+    8.568093	   24.330770	   19.892036	
+    1.909545	   24.105098	   20.483442	
+   20.242242	   12.312851	   11.338357	
+   13.583694	   12.087179	   11.929763	
+   16.350859	    6.121795	   14.189583	
+   22.264751	    5.896124	   14.780989	
+   25.031915	   15.226282	   17.040810	
+   18.373368	   15.000611	   17.632215	
+   21.140532	    9.035227	   19.892036	
+   14.481985	    8.809555	   20.483442	
+   20.242242	   27.608394	   11.338357	
+   13.583694	   27.382722	   11.929763	
+   16.350859	   21.417338	   14.189583	
+   22.264751	   21.191666	   14.780989	
+   25.031915	   30.521825	   17.040810	
+   18.373368	   30.296154	   17.632215	
+   21.140532	   24.330770	   19.892036	
+   14.481985	   24.105098	   20.483442	
+
+h_eff = 0.18, npl = 38
+[34m[k1_red,k2_red,k3_red] =   0.0000   0.0000   0.0000
+[0m[34m[k1_red,k2_red,k3_red] =   0.0000   0.5000   0.0000
+[0m[34m[k1_red,k2_red,k3_red] =   0.5000   0.0000   0.0000
+[0m[34m[k1_red,k2_red,k3_red] =   0.5000   0.5000   0.0000
+[0mAfter symmetry reduction, Nkpts_sym = 4
+k1[ 0]:   0.0000, k2[ 0]:   0.0000, k3[ 0]:   0.0000, kptwt[ 0]: 1.000 
+k1[ 1]:   0.0000, k2[ 1]:   0.5000, k3[ 1]:   0.0000, kptwt[ 1]: 1.000 
+k1[ 2]:   0.5000, k2[ 2]:   0.0000, k3[ 2]:   0.0000, kptwt[ 2]: 1.000 
+k1[ 3]:   0.5000, k2[ 3]:   0.5000, k3[ 3]:   0.0000, kptwt[ 3]: 1.000 
+----------------------
+Estimated memory usage
+Total: 442.30 GB
+orbitals             : 441.42 GB
+global sized vectors : 899.91 MB
+----------------------------------------------
+Estimated memory usage per processor: 1.73 GB
+
+rank = 0, Copying data from SPARC_Input into SPARC & set up subcomm took 7.352 ms
+Set up communicators.
+
+--set up spincomm took 1.134 ms
+
+--set up kptcomm took 0.876 ms
+
+ kpt_topo #3, kptcomm topology dims = {4, 4, 4}, nodes/proc = {35.00,42.50,44.25}
+
+ kpt_topo #0, kptcomm topology dims = {4, 4, 4}, nodes/proc = {35.00,42.50,44.25}
+
+ kpt_topo #2, kptcomm topology dims = {4, 4, 4}, nodes/proc = {35.00,42.50,44.25}
+
+ kpt_topo #1, kptcomm topology dims = {4, 4, 4}, nodes/proc = {35.00,42.50,44.25}
+
+--set up bandcomm took 0.139 ms
+rank = 0, dmcomm dims = {1, 1, 1}
+gridsizes = [140, 170, 177], Nstates = 293, dmcomm dims = [1, 1, 1]
+
+--set up dmcomm took 0.012 ms
+
+--set up blacscomm took 0.260 ms
+rank = 0, size_blacscomm = 64, ScaLAPACK topology Dims = (64, 1)
+nproc = 256, size_blacscomm = 64 = dims[0] * dims[1] = (64, 1)
+rank =  0, my blacs rank = 0, BLCYC size (4212600, 5), actual size (4212600, 5)
+rank = 0, nr_Hp = 293, nc_Hp = 293
+========================================================================
+Poisson domain decomposition:np total = 256, {Nx, Ny, Nz} = {140, 170, 177}
+nproc used = 256 = {4, 8, 8}, nodes/proc = {35.00, 21.25, 22.12}
+
+
+--set up dmcomm_phi took 1.527 ms
+======Set_D2D_Target: find receivers in each process (c_ndgrid) in send_comm took 0.001 ms
+======Set_D2D_Target: Gather and Scatter receivers in send_comm took 99.395 ms
+======Set_D2D_Target: find receivers in each process (c_ndgrid) in send_comm took 0.003 ms
+======Set_D2D_Target: Gather and Scatter receivers in send_comm took 0.015 ms
+
+Calculate_SplineDerivRadFun took 0.238 ms
+Rbmax_x = 7.296063, Rbmax_y = 7.299476, Rbmax_z = 7.297842
+rlen_ex = 487350, nxp = 47, nyp = 47, nzp = 53
+time spent on qsort: 11.819 ms.
+time spent on vectorized spline interp: 18.974 ms.
+Z = 15,rb_x = 5.475991,rb_y = 5.477698,rb_z = 5.476881,error = 2.788E-05,Bint = -15.0000278756795
+Z = 15,rb_x = 6.386027,rb_y = 6.388587,rb_z = 6.387361,error = 1.470E-05,Bint = -15.0000147048746
+Z = 15,rb_x = 6.841045,rb_y = 6.844031,rb_z = 6.842602,error = 1.494E-07,Bint = -15.0000001494453
+Z = 15,rb_x = 7.068554,rb_y = 7.071753,rb_z = 7.070222,error = 3.155E-08,Bint = -14.9999999684548
+Z = 15,rb_x = 6.954799,rb_y = 6.957892,rb_z = 6.956412,error = 1.494E-07,Bint = -15.0000001494453
+dx = 0.179606, dy = 0.179948, dz = 0.179784, Ncube_x = 40, Ncube_y = 40, Ncube_z = 40
+ityp = 0, converged in 5 iters, err_cur = 3.15E-08, TOL = 1.00E-07, rb = {7.068554, 7.071753, 7.070222}, after proj to grid rb = {7.184251, 7.197903, 7.191367}
+time for finding rb using bisection: 34.026 ms.
+
+Calculating rb for all atom types took 66.129 ms
+Start ground-state calculation.
+Calculating electron density ... 
+Finding atoms that influence the local process domain ... 
+
+Finding influencing atoms took 0.180 ms
+Calculating pseudocharge density ... 
+the global sum of int_b = -479.9999992005462, sum_int_rho = 477.7330131847253
+PosCharge = 479.999999200546, NegCharge = -477.733013184725, scal_fac = 1.004745299055
+After scaling, int_rho = 479.9999992005463, PosCharge + NegCharge - NetCharge = -5.684e-14
+--Calculate Vref took 0.000 ms
+--Calculate rho_guess took 0.000 ms
+
+ integral of b = -479.9999992005462,
+ int{b} + Nelectron + NetCharge = 7.995e-07,
+ Esc = -2257.6524944686639,
+ MPI_Reduce took 81.621 ms
+
+Calculating b & b_ref took 83.195 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 124.970 ms
+[0m
+Finding nonlocal influencing atoms in psi-domain took 126.580 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 433.187 ms
+[0m
+Calculating nonlocal projectors in psi-domain took 1888.630 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 0.484 ms
+[0m
+Finding nonlocal influencing atoms in kptcomm_topo took 0.811 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 0.000 ms
+[0m
+Calculating nonlocal projectors in kptcomm_topo took 0.245 ms
+Initializing electron density ... 
+Initializing Kohn-Sham orbitals ... 
+Finished setting random orbitals. Time taken: 1286.621 ms
+Start SCF calculation ... 
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -479.99999920054648, int_rho = 479.99999920054614, int_b + int_rho = -3.058e-13, checking this took 827.850 ms
+2-norm of RHS = 756.5002475600703, which took 1.796 ms
+
+iter_count = 948, r_2norm = 7.361e-05, tol*||rhs|| = 7.565e-05
+
+Anderson update took 1093.373 ms, out of which F'*F took 785.409 ms; b-Ax took 6742.956 ms, out of which Lap took 6593.123 ms
+Solving Poisson took 9208.575 ms
+rank = 0, XC calculation took 2.040 ms
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.005 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.005 ms
+======D2D: initiated sending and receiving took 1.460 ms
+---Transfer Veff_loc: D2D took 51.708 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.001 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 46.356 ms
+---Transfer Veff_loc: mpi_bcast (count = 4212600) to all bandcomms took 94.969 ms
+rank = 0, Veff calculation and Bcast (non-blocking) took 194.314 ms
+-------------
+SCF iter 1  
+-------------
+
+Time for setting up initial guess for Lanczos: 4.417 ms
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.003 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.006 ms
+======D2D: initiated sending and receiving took 17.976 ms
+
+Start Lanczos algorithm ...
+Wait for veff to be bcasted took 0.001 ms
+rank =  0, One H*x took 46.229 ms
+    Lanczos iter 57, eigmin  = -0.530227034, eigmax = 382.113395937, err_eigmin = 2.649e-04, err_eigmax = 9.763e-03
+rank =   0, Lanczos took 3565.203 ms, eigmin = -0.530227033838, eigmax = 385.934529896682
+
+ Chebfilt 1, in Chebyshev filtering, lambda_cutoff = 192.652151, lowerbound = -0.630227, upperbound = 385.934530
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (5 columns, degree = 38): 473123.068 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 10743.846 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 10130.308 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 10804.077 ms
+DP_Project_Hamiltonian_kpt, rank 0, calc HY used 10417.823 ms
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 50599 RUNNING AT iw-c42-11.pace.gatech.edu
+=   EXIT CODE: 9
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================

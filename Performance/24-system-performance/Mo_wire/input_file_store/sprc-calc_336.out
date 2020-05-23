@@ -1,0 +1,133 @@
+***************************************************************************
+*                           SPARC (May 06, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sun May 10 13:46:47 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 5.95263729638632 22.6767135100431 22.6767135100431 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 25 94 94
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 7 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 31
+NSTATES: 21
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.26E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.26E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.26E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 5.77E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: input_file_store/sprc-calc_336
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 4
+NP_BAND_PARAL: 21
+NP_DOMAIN_PARAL: 1 2 2
+NP_DOMAIN_PHI_PARAL: 3 8 14
+EIG_USE_LAPACK: 1
+EIG_LAPACK_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  336
+Mesh spacing in x-direction        :  0.238105 (Bohr)
+Mesh spacing in y-direction        :  0.241242 (Bohr)
+Mesh spacing in z direction        :  0.241242 (Bohr)
+Number of symmetry adapted k-points:  4
+Output printed to                  :  input_file_store/sprc-calc_336.out
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  28
+Atom type 1  (valence electrons)   :  Mo 14
+Pseudopotential                    :  input_file_store/Mo.pot
+Pseudocharge radii of atom type 1  :  6.43 6.51 6.51 (x, y, z dir)
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  1.71 GB
+Estimated memory per processor     :  5.20 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -6.8431167939E+01        4.983E-02        1.134
+2            -6.8446776081E+01        3.892E-02        0.338
+3            -6.8449795694E+01        6.381E-02        0.305
+4            -6.8442216745E+01        2.128E-02        0.260
+5            -6.8441877790E+01        1.218E-02        0.272
+6            -6.8441165116E+01        5.251E-03        0.307
+7            -6.8441221388E+01        2.670E-03        0.287
+8            -6.8441223175E+01        1.596E-03        0.307
+9            -6.8441248596E+01        9.367E-04        0.293
+10           -6.8441262294E+01        7.710E-04        0.309
+11           -6.8441272753E+01        4.224E-04        0.288
+12           -6.8441280051E+01        2.798E-04        0.301
+13           -6.8441290237E+01        2.184E-04        0.272
+14           -6.8441298018E+01        1.719E-04        0.263
+15           -6.8441301007E+01        1.234E-04        0.251
+Total number of SCF: 15    
+
+k = [-0.429, 0.000, 0.000]
+Occupation of state 19 = 0.000000000000000.
+Occupation of state 21 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -6.8441317580E+01 (Ha/atom)
+Total free energy                  : -1.3688263516E+02 (Ha)
+Band structure energy              : -2.8005084449E+01 (Ha)
+Exchange correlation energy        : -1.5049440471E+01 (Ha)
+Self and correction energy         : -2.0449570298E+02 (Ha)
+Entropy*kb*T                       : -2.2604970456E-03 (Ha)
+Fermi level                        : -1.0312006230E-01 (Ha)
+RMS force                          :  1.1375796621E-01 (Ha/Bohr)
+Maximum force                      :  1.1375796621E-01 (Ha/Bohr)
+Time for force calculation         :  0.037 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  5.373 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

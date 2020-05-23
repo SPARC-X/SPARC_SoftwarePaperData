@@ -1,0 +1,93 @@
+***************************************************************************
+*                           SPARC (May 06, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sat May  9 05:59:11 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 14.0583822422612 23.3556796602392 24.1491718922163 
+LATVEC:
+1 0 0 
+0 0.897818522371518 -0.440365644534885 
+0 0.002438979820962 0.999997025684293 
+FD_GRID: 59 97 101
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 3 2 2
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 31
+NSTATES: 110
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 250
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 3.66E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 3.66E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 3.66E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 5.73E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: input_file_store/sprc-calc_6
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 6
+NP_BAND_PARAL: 1
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 1 2 3
+EIG_USE_LAPACK: 1
+EIG_LAPACK_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  6
+Mesh spacing in x-direction        :  0.238278 (Bohr)
+Mesh spacing in y-direction        :  0.24078 (Bohr)
+Mesh spacing in z direction        :  0.239101 (Bohr)
+Number of symmetry adapted k-points:  8
+Output printed to                  :  input_file_store/sprc-calc_6.out
+Total number of atom types         :  2
+Total number of atoms              :  32
+Total number of electrons          :  176
+Atom type 1  (valence electrons)   :  P 5
+Pseudopotential                    :  input_file_store/P.pot
+Pseudocharge radii of atom type 1  :  6.67 6.74 6.69 (x, y, z dir)
+Number of atoms of type 1          :  16
+Atom type 2  (valence electrons)   :  Se 6
+Pseudopotential                    :  input_file_store/Se.pot
+Pseudocharge radii of atom type 2  :  6.91 6.98 6.93 (x, y, z dir)
+Number of atoms of type 2          :  16
+Estimated total memory usage       :  45.60 GB
+Estimated memory per processor     :  7.60 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -8.0305637513E+00        8.363E-02        2408.689
+2            -8.0657380135E+00        7.172E-02        575.974
+3            -8.0715933977E+00        2.782E-02        572.351

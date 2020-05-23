@@ -1,0 +1,124 @@
+***************************************************************************
+*                           SPARC (Apr 25, 2020)                          *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Apr 28 18:20:23 2020                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 8.05023329606531 31.553365972058 31.553365972058 
+LATVEC:
+1 0 0 
+0 1 0 
+-0 -0 1 
+FD_GRID: 45 175 175
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 5 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 38
+NSTATES: 62
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: density
+MIXING_PRECOND: none
+#WARNING: the preconditioner for SCF has been turned off, this 
+#might lead to slow SCF convergence. To specify SCF preconditioner, 
+#use 'MIXING_PRECOND' in the .inpt file
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: sprc-calc
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 3
+NP_BAND_PARAL: 21
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 2 4 8
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  64
+Mesh spacing in x-direction        :  0.178894 (Bohr)
+Mesh spacing in y-direction        :  0.180305 (Bohr)
+Mesh spacing in z direction        :  0.180305 (Bohr)
+Number of symmetry adapted k-points:  3
+Output printed to                  :  sprc-calc.out
+Total number of atom types         :  1
+Total number of atoms              :  24
+Total number of electrons          :  96
+Atom type 1  (valence electrons)   :  C 4
+Pseudopotential                    :  C.pot
+Pseudocharge radii of atom type 1  :  6.62 6.49 6.49 (x, y, z dir)
+Number of atoms of type 1          :  24
+Estimated total memory usage       :  23.21 GB
+Estimated memory per processor     :  371.28 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.7216246369E+00        1.889E-01        296.387
+2            -5.7121566565E+00        1.137E-01        76.022
+3            -5.7059295546E+00        3.333E-02        75.695
+4            -5.7053608407E+00        2.211E-02        75.638
+5            -5.7050050062E+00        1.152E-02        75.235
+6            -5.7049529562E+00        4.012E-03        75.131
+7            -5.7049462644E+00        8.761E-04        74.872
+8            -5.7049460302E+00        4.174E-04        74.553
+9            -5.7049460649E+00        2.985E-04        74.504
+10           -5.7049459893E+00        1.587E-04        74.365
+11           -5.7049459717E+00        4.584E-05        73.928
+12           -5.7049456965E+00        1.704E-05        73.809
+13           -5.7049458946E+00        6.694E-06        73.384
+Total number of SCF: 13    
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -5.7049460471E+00 (Ha/atom)
+Total free energy                  : -1.3691870513E+02 (Ha)
+Band structure energy              : -4.2302597891E+01 (Ha)
+Exchange correlation energy        : -4.1840486553E+01 (Ha)
+Self and correction energy         : -4.0156639493E+02 (Ha)
+Entropy*kb*T                       : -9.7155666886E-04 (Ha)
+Fermi level                        : -9.4443498840E-02 (Ha)
+RMS force                          :  1.5363595045E-02 (Ha/Bohr)
+Maximum force                      :  1.5386511202E-02 (Ha/Bohr)
+Time for force calculation         :  1.755 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  1200.708 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           
